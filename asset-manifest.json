@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8072e1b0.css",
+    "main.js": "/portfolio/static/js/main.242cc590.js",
+    "static/media/me.png": "/portfolio/static/media/me.a18860c77f1ceef1c41a.png",
+    "static/media/me2.jpg": "/portfolio/static/media/me2.508dfdb5c92a3f85c33c.jpg",
+    "static/media/kheiereddin-boukhatem.pdf": "/portfolio/static/media/kheiereddin-boukhatem.4a23bd7605b0df1685da.pdf",
+    "static/media/quiz.jpg": "/portfolio/static/media/quiz.2cc493101d6f209efbb0.jpg",
+    "static/media/recipes.jpg": "/portfolio/static/media/recipes.ca91ffb5da9cf8a402f9.jpg",
+    "static/media/crypto.jpg": "/portfolio/static/media/crypto.2ccb1eee7650eb33cac9.jpg",
+    "static/media/adminDashboard.jpg": "/portfolio/static/media/adminDashboard.174bf9d8cde3c837f679.jpg",
+    "static/media/weather.jpg": "/portfolio/static/media/weather.8f4473d87d9afc13478a.jpg",
+    "static/media/budget.jpg": "/portfolio/static/media/budget.acb92a78dc5b9a282357.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.8072e1b0.css.map": "/portfolio/static/css/main.8072e1b0.css.map",
+    "main.242cc590.js.map": "/portfolio/static/js/main.242cc590.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8072e1b0.css",
+    "static/js/main.242cc590.js"
+  ]
+}
