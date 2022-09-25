@@ -1,0 +1,198 @@
+
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 1050px) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 808px) {
+    padding: 30px 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .my-image {
+    width: 400px;
+    align-self: center;
+    @media screen and (max-width: 880px) {
+      width: 350px;
+    }
+
+    @media screen and (max-width: 808px) {
+      width: 250px;
+    }
+  }
+
+  .header_left {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1150px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    .links {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: column;
+      height: 240px;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 1150px) {
+        flex-direction: row;
+        height: fit-content;
+        margin-top: 30px;
+        width: 250px;
+      }
+      a {
+        color: var(--secondary-color);
+        font-size: 2rem;
+
+        &:hover {
+          transform: scale(1.13);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .scrollDown-link {
+        background-color: transparent;
+        border: 2px solid var(--secondary-color);
+        height: 60px;
+        width: 25px;
+        border-radius: 10px;
+        position: relative;
+        @media screen and (max-width: 1150px) {
+          display: none;
+        }
+        .circle {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          animation: scrollDown 1s ease-in-out infinite;
+          position: absolute;
+          background-color: var(--secondary-color);
+          bottom: 0;
+        }
+      }
+    }
+
+    .header-desc {
+      text-transform: capitalize;
+      p {
+        font-size: 1.9rem;
+      }
+
+      h1 {
+        font-size: 4.3rem;
+        letter-spacing: 2.3px;
+        @media screen and (max-width: 1150px) {
+          font-size: 3.7rem;
+        }
+        @media screen and (max-width: 808px) {
+          font-size: 3rem;
+          letter-spacing: 1px;
+        }
+        @media screen and (max-width: 408px) {
+          font-size: 2.6rem;
+          letter-spacing: normal;
+        }
+      }
+
+      span {
+        font-size: 1.5rem;
+        color: var(--thered-color);
+      }
+
+      .buttons {
+        margin-top: 50px;
+        width: fit-content;
+        display: flex;
+        gap: 40px;
+
+        @media screen and (max-width: 1150px) {
+          margin-top: 30px;
+        }
+        button {
+          padding: 15px;
+          border-radius: 10px;
+          font-size: 1.2rem;
+          border: 1px solid var(--secondary-color);
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+
+          @media screen and (max-width: 808px) {
+            padding: 10px;
+          }
+
+          &:nth-child(1) {
+            background-color: transparent;
+            a {
+              color: var(--secondary-color);
+            }
+          }
+
+          &:nth-child(2) {
+            background-color: var(--secondary-color);
+            a {
+              color: var(--bg-color);
+              &:hover {
+                color: var(--secondary-color);
+              }
+            }
+          }
+
+          &:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes scrollDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.scrollTopBtn {
+  font-size: 2.2rem;
+  columns: var(--bg-color);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  position: fixed;
+  right: 2rem;
+  bottom: 5.5rem;
+  color: var(--bg-color);
+  cursor: pointer;
+  @media screen and (max-width: 860px) {
+    display: none;
+  }
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+  }
+}

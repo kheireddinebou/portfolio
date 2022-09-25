@@ -1,0 +1,112 @@
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 0;
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .links-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        width: 350px;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        border: 1px solid var(--secondary-color);
+        background-color: var(--bg-color-sec);
+        transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 920px) {
+            width: 100%;
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+        .left {
+          font-size: 2.5rem;
+          color: var(--secondary-color);
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          p {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+          }
+
+          span {
+            font-size: 1rem;
+            color: var(--thered-color);
+          }
+        }
+      }
+    }
+
+    .form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+      input, textarea{
+        width: 80%;
+        background-color: transparent;
+        border: 1px solid var(--secondary-color);
+        padding: 20px;
+        border-radius: 10px;
+        color: var(--primary-color);
+        word-wrap: break-word;
+        word-break: break-all;
+
+        @media screen and (max-width: 920px) {
+            width: 100%;
+        }
+
+        input{
+            height: 80px;
+        }
+        
+      }
+
+
+      button{
+        padding: 15px;
+        color: var(--bg-color);
+        background-color: var(--secondary-color);
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-radius: 7px;
+        transition: all 0.3s ease-in-out ;
+
+        &:hover{
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
