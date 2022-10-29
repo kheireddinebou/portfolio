@@ -1,26 +1,39 @@
 import React, { useState } from "react";
 import "./skills.scss";
-import { RiBracesFill, RiArrowDownSLine } from "react-icons/ri";
+import { RiArrowDownSLine } from "react-icons/ri";
 import { FaUniversity } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
+import { BsServer } from "react-icons/bs";
+import { MdMonitor } from "react-icons/md";
+
 import { BsPatchCheckFill } from "react-icons/bs";
 
 function Skills() {
-  const [showSkills, setShowSkills] = useState(true);
+  const [showFrontSkills, setShowFrontSkills] = useState(true);
+  const [showBackSkills, setShowBackSkills] = useState(true);
   const [showEduc, setShowEduc] = useState(true);
 
-  const mySkills = [
+  const frontSkills = [
     "HTML",
     "CSS",
     "TypeScript",
     "JavaScript",
     "React",
-    "Git & GitHub",
-    'Jest',
+    "Next.js",
     "Bootstrap",
     "Material-UI",
     "Sass",
     "styled-components",
+    "Git & GitHub",
+    "Jest",
+  ];
+
+  const backSkills = [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "RESTful APIs",
+    "Firebase",
   ];
 
   return (
@@ -32,20 +45,46 @@ function Skills() {
         <div className="card">
           <div className="top">
             <div className="row">
-              <RiBracesFill className="icon" />
-              <p>Frontend Developer</p>
+              <MdMonitor className="icon" />
+              <p>Frontend Development</p>
             </div>
 
             <button
-              onClick={() => setShowSkills(!showSkills)}
-              className={`${showSkills && "rotate"}`}
+              onClick={() => setShowFrontSkills(!showFrontSkills)}
+              className={`${showFrontSkills && "rotate"}`}
             >
               <RiArrowDownSLine />
             </button>
           </div>
-          {showSkills && (
+          {showFrontSkills && (
             <div className="skills-bottom">
-              {mySkills.map((skill, index) => (
+              {frontSkills.map((skill, index) => (
+                <div key={index} className="row">
+                  <BsPatchCheckFill className="icon" />
+                  <span>{skill}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="card">
+          <div className="top">
+            <div className="row">
+              <BsServer className="icon" />
+              <p>Backend Development</p>
+            </div>
+
+            <button
+              onClick={() => setShowBackSkills(!showBackSkills)}
+              className={`${showBackSkills && "rotate"}`}
+            >
+              <RiArrowDownSLine />
+            </button>
+          </div>
+          {showBackSkills && (
+            <div className="skills-bottom">
+              {backSkills.map((skill, index) => (
                 <div key={index} className="row">
                   <BsPatchCheckFill className="icon" />
                   <span>{skill}</span>
@@ -75,11 +114,10 @@ function Skills() {
               <FaUniversity className="icon" />
 
               <div className="desc">
-                <p className="license">B.A Science and Technologies</p>
+                <p className="license">Bachelor of Science and Technology</p>
                 <span className="university">
                   University of Ahmed Zabana - Relizene
                 </span>
-                <span>Sept 2021 – June 2024</span>
               </div>
             </div>
           )}

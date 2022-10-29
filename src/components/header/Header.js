@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./header.scss";
-import me from "../../images/me.png";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { BiUpArrowAlt } from "react-icons/bi";
 import CV from "../../files/kheiereddin-boukhatem.pdf";
@@ -30,7 +29,7 @@ function Header() {
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}
           transition={{ type: 'spring', duration: 3 }}
-          className="header_left"
+          className="header_wrapper"
         >
           <div className="links">
             <a
@@ -54,7 +53,7 @@ function Header() {
           <div className="header-desc">
             <p>Hello, I'm</p>
             <h1>kheiereddin</h1>
-            <span>frontend developer</span>
+            <span>Full stack web developer</span>
             <div className="buttons">
               <button>
                 <a href={CV} download>
@@ -68,14 +67,7 @@ function Header() {
           </div>
         </motion.div>
 
-        <motion.img
-          initial={{ x: 90 }}
-          whileInView={{ x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}
-          className="my-image"
-          src={me}
-          alt="kheiereddin boukhatem"
-        />
+        
       </div>
 
       <button

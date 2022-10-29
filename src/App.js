@@ -6,7 +6,6 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import NavMenu from "./components/navMenu/NavMenu";
 import Portfolio from "./components/portfolio/Portfolio";
-import Services from "./components/services/Services";
 import Skills from "./components/skills/Skills";
 import { ThemeProvider } from "./theme";
 
@@ -18,7 +17,6 @@ function App() {
      <Header /> 
       <About />
        <Skills />
-       <Services />
        <Portfolio />
        <Contact />
       <Footer />

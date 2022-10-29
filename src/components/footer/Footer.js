@@ -12,7 +12,6 @@ function Footer() {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills & Education</a>
-        <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
       </div>
 
