@@ -13,7 +13,6 @@
     grid-template-columns: repeat(2, 1fr);
     @media screen and (max-width: 1000px) {
       grid-template-columns: repeat(1, 1fr);
-
     }
 
     .card {
@@ -28,6 +27,26 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        position: relative;
+
+        // hover effect
+
+        &::after {
+          content: " ";
+          position: absolute;
+          border-bottom: 2px var(--secondary-color) solid;
+          bottom: -8px;
+          left: 0;
+          width: 0;
+        }
+
+        &:hover  {
+          &::after {
+            width: 90%;
+            transition: all 1s ease-in-out;
+          }
+        }
+
         .row {
           display: flex;
           align-items: center;

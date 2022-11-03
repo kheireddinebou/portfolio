@@ -32,10 +32,27 @@
       a {
         color: var(--secondary-color);
         font-size: 2.2rem;
+        border-left: 2.5px solid transparent;
+        position: relative;
+
+        // hover effect
+
+        &::after {
+          content: " ";
+          position: absolute;
+          border-left: 2px var(--secondary-color) solid;
+          top: 5px;
+          left: -7px;
+          height: 0;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
 
         &:hover {
-          transform: scale(1.13);
-          transition: all 0.3s ease-in-out;
+          &::after {
+            height: 75%;
+            transition: all 0.3s ease-in-out;
+          }
         }
       }
 
@@ -46,6 +63,14 @@
         width: 25px;
         border-radius: 10px;
         position: relative;
+
+        &:hover {
+          &::after {
+            top: 0;
+            height: 100%;
+            transition: all 0.3s ease-in-out;
+          }
+        }
 
         .circle {
           height: 20px;
