@@ -53,7 +53,7 @@ function Header() {
           <div className="header-desc">
             <p>Hello, I'm</p>
             <h1>kheiereddin</h1>
-            <span>Full stack web developer</span>
+            <span>front end web developer</span>
             <div className="buttons">
               <button>
                 <a href={CV} download>

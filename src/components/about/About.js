@@ -9,7 +9,7 @@ function About() {
 
       <div className="desc">
         <p>
-          I'm Full Stack web developer (MERN Stack), specialize in website using
+          I'm Front End web developer (MERN Stack), specialize in website using
           React.js, I have experience in developing responsive web applications,
           using different technologies and libraries.
           <br /> I am a person who respects appointments and gives importance to
