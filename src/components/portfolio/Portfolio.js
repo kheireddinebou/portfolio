@@ -6,6 +6,7 @@ import khirouChat from "../../images/portfolio/khirou-chat.jpg";
 import creativeMinds from "../../images/portfolio/creative-minds.jpg";
 import expense from "../../images/portfolio/expense-tracker.jpg";
 import pizzaOredering from "../../images/portfolio/pizza-ordering.jpg";
+import khirouShop from "../../images/portfolio/khirou-shop.jpg";
 import { BsArrowRightShort } from "react-icons/bs";
 // import budget from "../../images/portfolio/budget.jpg";
 // import adminDashboard from "../../images/portfolio/adminDashboard.jpg";
@@ -29,11 +30,11 @@ function Portfolio() {
     },
 
     {
-      img: pizzaOredering,
+      img: khirouShop,
       title:
-        "Pizza Ordering Website With Admin Panel using Next.js, Node.js, MongoDB and Bootstrap",
-      githubLink: "https://github.com/khiereddinbou/pizza-ordering",
-      demoLink: "https://pizza-ordering.vercel.app/",
+        "Full E-commerce Website With Admin Panel using React.js, Node.js, Stripe, JWT, MongoDB and styled-components",
+      githubLink: "https://github.com/khiereddinbou/khirou-shop",
+      demoLink: "https://khirou-shop.onrender.com",
     },
     {
       img: expense,
@@ -57,6 +58,13 @@ function Portfolio() {
       githubLink: "https://github.com/khiereddinbou/cryptocurrency-tracker",
       demoLink: "https://khiereddinbou.github.io/cryptocurrency-tracker",
     },
+    // {
+    //   img: pizzaOredering,
+    //   title:
+    //     "Pizza Ordering Website With Admin Panel using Next.js, Node.js, MongoDB and Bootstrap",
+    //   githubLink: "https://github.com/khiereddinbou/pizza-ordering",
+    //   demoLink: "https://pizza-ordering.vercel.app/",
+    // },
 
     // {
     //   img: budget,

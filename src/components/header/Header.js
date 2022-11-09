@@ -28,7 +28,7 @@ function Header() {
         <motion.div
           initial={{ x: -100 }}
           whileInView={{ x: 0 }}
-          transition={{ type: 'spring', duration: 3 }}
+          transition={{ type: "spring", duration: 3 }}
           className="header_wrapper"
         >
           <div className="links">
@@ -66,8 +66,6 @@ function Header() {
             </div>
           </div>
         </motion.div>
-
-        
       </div>
 
       <button
