@@ -7,6 +7,7 @@ import creativeMinds from "../../images/portfolio/creative-minds.jpg";
 import expense from "../../images/portfolio/expense-tracker.jpg";
 import pizzaOredering from "../../images/portfolio/pizza-ordering.jpg";
 import khirouShop from "../../images/portfolio/khirou-shop.jpg";
+import myCar from "../../images/portfolio/my-car.jpg";
 import { BsArrowRightShort } from "react-icons/bs";
 // import budget from "../../images/portfolio/budget.jpg";
 // import adminDashboard from "../../images/portfolio/adminDashboard.jpg";
@@ -15,6 +16,13 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 function Portfolio() {
   const myWorks = [
+    {
+      img: myCar,
+      title:
+        "Moders Website For Buy and sell used and new cars using React.js, Node.js, JWT, MongoDB, Cloudinary and Sass",
+      githubLink: "https://github.com/khiereddinbou/my-car",
+      demoLink: "https://my-car.onrender.com",
+    },
     {
       img: creativeMinds,
       title:
