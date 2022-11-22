@@ -21,7 +21,7 @@ function Portfolio() {
       title:
         "Moders Website For Buy and sell used and new cars using React.js, Node.js, JWT, MongoDB, Cloudinary and Sass",
       githubLink: "https://github.com/khiereddinbou/my-car",
-      demoLink: "https://my-car.onrender.com",
+      demoLink: "https://my-car-khiereddinbou.vercel.app/",
     },
     {
       img: creativeMinds,
@@ -42,14 +42,14 @@ function Portfolio() {
       title:
         "Full E-commerce Website With Admin Panel using React.js, Node.js, Stripe, JWT, MongoDB and styled-components",
       githubLink: "https://github.com/khiereddinbou/khirou-shop",
-      demoLink: "https://khirou-shop.onrender.com",
+      demoLink: "https://khirou-shop.vercel.app/",
     },
     {
       img: expense,
       title:
         "Expense Tracker Using React, Chart.js, RESTful APIs and Bootstrap",
       githubLink: "https://github.com/khiereddinbou/expense-tracker",
-      demoLink: "https://expense-tracker-khirou.onrender.com/",
+      demoLink: "https://expense-tracker-khirou.vercel.app/",
     },
     {
       img: weather,
