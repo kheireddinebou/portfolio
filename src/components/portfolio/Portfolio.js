@@ -19,7 +19,7 @@ function Portfolio() {
     {
       img: myCar,
       title:
-        "Moders Website For Buy and sell used and new cars using React.js, Node.js, JWT, MongoDB, Cloudinary and Sass",
+        "Modern Website For Buy and sell used and new cars using React.js, Node.js, JWT, MongoDB, Cloudinary and Sass",
       githubLink: "https://github.com/khiereddinbou/my-car",
       demoLink: "https://my-car-khiereddinbou.vercel.app/",
     },
