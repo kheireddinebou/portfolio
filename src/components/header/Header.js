@@ -53,7 +53,7 @@ function Header() {
           <div className="header-desc">
             <p>Hello, I'm</p>
             <h1>kheiereddin</h1>
-            <span>front end web developer</span>
+            <span>front end developer (React Js/ React Native)</span>
             <div className="buttons">
               <button>
                 <a href={CV} download>

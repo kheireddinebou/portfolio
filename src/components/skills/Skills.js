@@ -19,13 +19,13 @@ function Skills() {
     "TypeScript",
     "JavaScript",
     "React",
+    "React Native",
     "Next.js",
     "Bootstrap",
     "Material-UI",
     "Sass",
     "styled-components",
     "Git & GitHub",
-    "Jest",
   ];
 
   const backSkills = [

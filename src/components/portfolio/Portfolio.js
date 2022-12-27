@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.scss";
 import crypto from "../../images/portfolio/crypto.jpg";
 import weather from "../../images/portfolio/weather.jpg";
-import khirouChat from "../../images/portfolio/khirou-chat.jpg";
+import talkilly from "../../images/portfolio/talkilly.jpg";
 import creativeMinds from "../../images/portfolio/creative-minds.jpg";
 import expense from "../../images/portfolio/expense-tracker.jpg";
 import pizzaOredering from "../../images/portfolio/pizza-ordering.jpg";
@@ -31,10 +31,10 @@ function Portfolio() {
       demoLink: "https://creative-minds-khirou.vercel.app/",
     },
     {
-      img: khirouChat,
-      title: "Realtime Private Chat Application with React, Firebase and Sass",
-      githubLink: "https://github.com/khiereddinbou/chat-app",
-      demoLink: "https://khirou-chat.onrender.com",
+      img: talkilly,
+      title: "Realtime Private Chat Mobile Application with React Native and Firebase ",
+      githubLink: "https://github.com/khiereddinbou/talkilly",
+      demoLink: "https://expo.dev/@kheiereddin/talkilly",
     },
 
     {
