@@ -10,7 +10,7 @@ function About() {
       <div className="desc">
         <p>
           I'm Front End web developer (MERN Stack), specialize in website using
-          React.js, and native mobile applications using React Native, I have experience in developing responsive web applications
+          React.js and cross platform mobile applications using React Native, I have experience in developing responsive web applications
           using different technologies and libraries as well as mobile applications.
           <br /> I am a person who respects appointments and gives importance to
           time, I Like to share experiences with others, and also loves to learn
