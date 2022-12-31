@@ -27,7 +27,7 @@ function NavMenu() {
   return (
     <motion.div
       initial={{ bottom: -100 }}
-      animate={{ bottom : 40}}
+      animate={{ bottom: 40 }}
       transition={{
         type: "spring",
         stiffness: 100,
@@ -61,14 +61,14 @@ function NavMenu() {
         className={active === "#portfolio" ? "active" : ""}
         href="#portfolio"
       >
-        <TbHeartHandshake />
+        <HiOutlineDocumentText />
       </a>
       <a
         onClick={() => handleActive("#contact")}
         className={active === "#contact" ? "active" : ""}
         href="#contact"
       >
-        <HiOutlineDocumentText />
+        <TbHeartHandshake />
       </a>
 
       <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>

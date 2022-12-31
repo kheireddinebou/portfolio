@@ -5,15 +5,9 @@ import weather from "../../images/portfolio/weather.jpg";
 import talkilly from "../../images/portfolio/talkilly.jpg";
 import creativeMinds from "../../images/portfolio/creative-minds.jpg";
 import expense from "../../images/portfolio/expense-tracker.jpg";
-import pizzaOredering from "../../images/portfolio/pizza-ordering.jpg";
 import khirouShop from "../../images/portfolio/khirou-shop.jpg";
 import myCar from "../../images/portfolio/my-car.jpg";
 import { BsArrowRightShort } from "react-icons/bs";
-// import budget from "../../images/portfolio/budget.jpg";
-// import adminDashboard from "../../images/portfolio/adminDashboard.jpg";
-// import quiz from "../../images/portfolio/quiz.jpg";
-// import recipes from "../../images/portfolio/recipes.jpg";
-
 function Portfolio() {
   const myWorks = [
     {

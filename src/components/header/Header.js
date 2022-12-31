@@ -6,17 +6,23 @@ import CV from "../../files/kheiereddin-boukhatem.pdf";
 import { motion } from "framer-motion";
 
 function Header() {
-  const [scrollToTop, setscrollToTop] = useState(false);
+  const [scrollToTop, setScrollToTop] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 500) {
-      setscrollToTop(true);
+      setScrollToTop(true);
     } else {
-      setscrollToTop(false);
+      setScrollToTop(false);
     }
   };
 
-  window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    return () => window.removeEventListener(("scroll", handleScroll));
+  }, []);
 
   const handleScrollToTop = () => {
     window.scrollTo(0, 0);
@@ -70,7 +76,7 @@ function Header() {
 
       <button
         style={{
-          display: !scrollToTop && "none",
+          bottom: !scrollToTop ? "-100%" : "5.5rem",
         }}
         className="scrollTopBtn"
         onClick={handleScrollToTop}
