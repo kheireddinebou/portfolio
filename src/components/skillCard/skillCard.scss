@@ -14,20 +14,14 @@
 
     // hover effect
 
-    &::after {
+    .underline {
       content: " ";
       position: absolute;
       border-bottom: 2px var(--secondary-color) solid;
       bottom: -8px;
       left: 0;
       width: 0;
-    }
-
-    &:hover {
-      &::after {
-        width: 90%;
-        transition: all 1s ease-in-out;
-      }
+      transition: all 1s ease-in-out;
     }
 
     .row {

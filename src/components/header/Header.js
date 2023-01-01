@@ -32,8 +32,8 @@ function Header() {
     <>
       <div id="home" className="header container">
         <motion.div
-          initial={{ x: -100 }}
-          whileInView={{ x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{ type: "spring", duration: 3 }}
           className="header_wrapper"
         >

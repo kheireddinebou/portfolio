@@ -40,6 +40,11 @@ function SkillCard({ title, skills, Icon }) {
         >
           <RiArrowDownSLine />
         </button>
+
+        <div
+          style={{ width: isVisisble ? "100%" : 0 }}
+          className="underline"
+        ></div>
       </div>
       {skills ? (
         <div className="skills-bottom" style={{ opacity: isVisisble ? 1 : 0 }}>
