@@ -13,6 +13,7 @@ function Footer() {
         <a href="#about">About</a>
         <a href="#skills">Skills & Education</a>
         <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div className="links">

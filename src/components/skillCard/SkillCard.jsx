@@ -11,7 +11,7 @@ function SkillCard({ title, skills, Icon }) {
 
   const observer = new IntersectionObserver(
     ([entry]) => setIntersecting(entry.isIntersecting),
-    { threshold: 0.7 }
+    { threshold: 0.6 }
   );
 
   useEffect(() => {
