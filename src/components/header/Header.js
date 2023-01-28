@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
-import { BiUpArrowAlt } from "react-icons/bi";
+import { MdKeyboardArrowUp } from "react-icons/md";
 import CV from "../../files/kheiereddin-boukhatem.pdf";
 import { motion } from "framer-motion";
 
@@ -81,7 +81,7 @@ function Header() {
         className="scrollTopBtn"
         onClick={handleScrollToTop}
       >
-        <BiUpArrowAlt />
+        <MdKeyboardArrowUp />
       </button>
     </>
   );
