@@ -13,12 +13,14 @@ function Skills() {
     "JavaScript",
     "React",
     "React Native",
+    "Redux",
     "Next.js",
     "Bootstrap",
     "Material-UI",
     "Sass",
     "styled-components",
     "Git & GitHub",
+    "Jest"
   ];
 
   const backSkills = [
