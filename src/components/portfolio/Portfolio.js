@@ -4,7 +4,7 @@ import crypto from "../../images/portfolio/crypto.jpg";
 import weather from "../../images/portfolio/weather.jpg";
 import talkilly from "../../images/portfolio/talkilly.jpg";
 import creativeMinds from "../../images/portfolio/creative-minds.jpg";
-import expense from "../../images/portfolio/expense-tracker.jpg";
+import quiz from "../../images/portfolio/quiz.jpg";
 import khirouShop from "../../images/portfolio/khirou-shop.jpg";
 import myCar from "../../images/portfolio/my-car.jpg";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -26,7 +26,8 @@ function Portfolio() {
     },
     {
       img: talkilly,
-      title: "Realtime Private Chat Mobile Application with React Native and Firebase ",
+      title:
+        "Realtime Private Chat Mobile Application with React Native and Firebase ",
       githubLink: "https://github.com/khiereddinbou/talkilly",
       demoLink: "https://expo.dev/@kheiereddin/talkilly",
     },
@@ -38,19 +39,20 @@ function Portfolio() {
       githubLink: "https://github.com/khiereddinbou/khirou-shop",
       demoLink: "https://khirou-shop.vercel.app/",
     },
-    {
-      img: expense,
-      title:
-        "Expense Tracker Using React, Chart.js, RESTful APIs and Bootstrap",
-      githubLink: "https://github.com/khiereddinbou/expense-tracker",
-      demoLink: "https://expense-tracker-khirou.vercel.app/",
-    },
+
     {
       img: weather,
       title:
         "Weather app with daily and hourly forcast using react, api, Bootstrap",
       githubLink: "https://github.com/khiereddinbou/weather",
       demoLink: "https://khiereddinbou.github.io/weather/",
+    },
+
+    {
+      img: quiz,
+      title: "Quiz app using TypeScript, Sass and The Trivia API ",
+      githubLink: "https://github.com/khiereddinbou/quiz-app",
+      demoLink: "https://khiereddinbou.github.io/quiz-app/",
     },
 
     {
@@ -69,6 +71,14 @@ function Portfolio() {
     // },
 
     // {
+    //   img: expense,
+    //   title:
+    //     "Expense Tracker Using React, Chart.js, RESTful APIs and Bootstrap",
+    //   githubLink: "https://github.com/khiereddinbou/expense-tracker",
+    //   demoLink: "https://expense-tracker-khirou.vercel.app/",
+    // },
+
+    // {
     //   img: budget,
     //   title: "Budget planner with notications using Bootstrap",
     //   githubLink: "https://github.com/khiereddinbou/budget-planer",
@@ -80,12 +90,7 @@ function Portfolio() {
     //   githubLink: "https://github.com/khiereddinbou/admin-dashboard",
     //   demoLink: "https://khiereddinbou.github.io/admin-dashboard",
     // },
-    // {
-    //   img: quiz,
-    //   title: "Quiz app using TypeScript and Sass",
-    //   githubLink: "https://github.com/khiereddinbou/quiz-app",
-    //   demoLink: "https://khiereddinbou.github.io/quiz-app/",
-    // },
+
     // {
     //   img: recipes,
     //   title: "Cooking app with categories and international cuisines using css",
