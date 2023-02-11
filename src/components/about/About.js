@@ -3,24 +3,22 @@ import "./about.scss";
 
 function About() {
   return (
-    <div
-      id="about"
-      className="about container"
-    >
+    <div id="about" className="about container">
       <h2 className="sec-title">About Me</h2>
       <span className="sec-subTitle">My introduction</span>
 
       <div className="desc">
         <p>
-          I'm Front End web developer (MERN Stack), specialize in website using
-          React.js and cross platform mobile applications using React Native, I
-          have experience in developing responsive web applications using
-          different technologies and libraries as well as mobile applications.
-          <br /> I am a person who respects appointments and gives importance to
-          time, I Like to share experiences with others, and also loves to learn
-          something new every single day.
-          <br />I have a passion for technology and i love to work in groups to
-          get the best possible results.
+          As a skilled Front End Web Developer, I am proficient in the MERN
+          Stack and specialize in creating visually appealing and user-friendly
+          websites using React.js. I am also experienced in developing
+          cross-platform mobile applications using React Native, ensuring that
+          users have a seamless experience across all devices.
+          <br /> I have a strong commitment to meeting deadlines and valuing the
+          importance of time. I believe that open communication and
+          collaboration are key to achieving the best possible results.
+          <br /> I am constantly seeking out new challenges and opportunities to
+          expand my knowledge and deliver high-quality results.
         </p>
         <a href="#contact">Let's talk</a>
       </div>
