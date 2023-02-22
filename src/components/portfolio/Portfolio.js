@@ -7,7 +7,8 @@ import creativeMinds from "../../images/portfolio/creative-minds.jpg";
 import quiz from "../../images/portfolio/quiz.jpg";
 import khirouShop from "../../images/portfolio/khirou-shop.jpg";
 import myCar from "../../images/portfolio/my-car.jpg";
-import { BsArrowRightShort } from "react-icons/bs";
+import notes from "../../images/portfolio/notes.jpg";
+
 function Portfolio() {
   const myWorks = [
     {
@@ -16,6 +17,14 @@ function Portfolio() {
         "Modern Website For Buy and sell used and new cars using React.js, Node.js, JWT, MongoDB, Cloudinary and Sass",
       githubLink: "https://github.com/khiereddinbou/my-car",
       demoLink: "https://my-car-khiereddinbou.vercel.app/",
+    },
+
+    {
+      img: notes,
+      title:
+        "Cool notes app using React.js, TypeScript, Node.js, JWT, MongoDB, Bootstrap",
+      githubLink: "https://github.com/khiereddinbou/cool-notes",
+      demoLink: "https://notes-upg8.onrender.com/",
     },
     {
       img: creativeMinds,
@@ -108,10 +117,10 @@ function Portfolio() {
             <img loading="lazy" src={work.img} alt={work.title} />
             <p>{work.title}</p>
             <div className="links">
-              <a target="_blank" href={work.githubLink}>
+              <a target="_blank" rel="noreferrer" href={work.githubLink}>
                 Github
               </a>
-              <a target="_blank" href={work.demoLink}>
+              <a target="_blank" rel="noreferrer" href={work.demoLink}>
                 Demo
               </a>
             </div>
