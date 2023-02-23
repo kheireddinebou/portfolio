@@ -6,6 +6,7 @@ import { FaUniversity } from "react-icons/fa";
 import { BsServer } from "react-icons/bs";
 import { MdMonitor } from "react-icons/md";
 import SkillCard from "../skillCard/SkillCard";
+import { backSkills, frontSkills } from "../../data/skills";
 
 function Skills() {
   const ref = useRef();
@@ -27,31 +28,6 @@ function Skills() {
       observer.disconnect();
     };
   }, []);
-
-  const frontSkills = [
-    "HTML",
-    "CSS",
-    "TypeScript",
-    "JavaScript",
-    "React",
-    "React Native",
-    "Redux",
-    "Next.js",
-    "Bootstrap",
-    "Material-UI",
-    "Sass",
-    "styled-components",
-    "Git & GitHub",
-    "Jest",
-  ];
-
-  const backSkills = [
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "RESTful APIs",
-    "Firebase",
-  ];
 
   return (
     <div ref={ref} id="skills" className="skills container">
