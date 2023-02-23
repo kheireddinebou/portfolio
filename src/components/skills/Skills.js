@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setActiveSec } from "../../redux/activeSecSlice";
 import "./skills.scss";
 import { FaUniversity } from "react-icons/fa";
 import { BsServer } from "react-icons/bs";
@@ -6,6 +8,26 @@ import { MdMonitor } from "react-icons/md";
 import SkillCard from "../skillCard/SkillCard";
 
 function Skills() {
+  const ref = useRef();
+  const dispatch = useDispatch();
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        dispatch(setActiveSec(entry.target.id));
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  useEffect(() => {
+    observer.observe(ref.current);
+    // Remove the observer as soon as the component is unmounted
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const frontSkills = [
     "HTML",
     "CSS",
@@ -20,7 +42,7 @@ function Skills() {
     "Sass",
     "styled-components",
     "Git & GitHub",
-    "Jest"
+    "Jest",
   ];
 
   const backSkills = [
@@ -32,7 +54,7 @@ function Skills() {
   ];
 
   return (
-    <div id="skills" className="skills container">
+    <div ref={ref} id="skills" className="skills container">
       <h2 className="sec-title">Skills & Education</h2>
       <span className="sec-subTitle">My technical level</span>
 

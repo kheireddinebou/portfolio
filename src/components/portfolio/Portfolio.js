@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setActiveSec } from "../../redux/activeSecSlice";
 import "./portfolio.scss";
 import crypto from "../../images/portfolio/crypto.jpg";
 import weather from "../../images/portfolio/weather.jpg";
@@ -10,6 +12,26 @@ import myCar from "../../images/portfolio/my-car.jpg";
 import notes from "../../images/portfolio/notes.jpg";
 
 function Portfolio() {
+  const ref = useRef();
+  const dispatch = useDispatch();
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        dispatch(setActiveSec(entry.target.id));
+      }
+    },
+    { threshold: 0.05 }
+  );
+
+  useEffect(() => {
+    observer.observe(ref.current);
+    // Remove the observer as soon as the component is unmounted
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const myWorks = [
     {
       img: myCar,
@@ -108,7 +130,7 @@ function Portfolio() {
     // },
   ];
   return (
-    <div id="portfolio" className="portfolio container">
+    <div ref={ref} id="portfolio" className="portfolio container">
       <h2 className="sec-title">Portfolio</h2>
       <span className="sec-subTitle">Most recent work</span>
       <div className="card-wrapper">

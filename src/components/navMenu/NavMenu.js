@@ -1,4 +1,3 @@
-import React, { useContext, useEffect, useState } from "react";
 import "./NavMenu.scss";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { BiHomeAlt } from "react-icons/bi";
@@ -8,21 +7,12 @@ import { TbHeartHandshake } from "react-icons/tb";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { useTheme } from "../../theme";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 function NavMenu() {
-  const [active, setActive] = useState("#");
+  const activeSec = useSelector(state => state.activeSec.activeSec);
 
   const { theme, setTheme } = useTheme();
-
-  //   const windowPath = window.location.href.split('/')[3]
-
-  const handleActive = link => {
-    setActive(link);
-  };
-
-  //   useEffect(() =>{
-  //    setActive(windowPath)
-  //   }, [windowPath]);
 
   return (
     <motion.div
@@ -35,39 +25,22 @@ function NavMenu() {
       }}
       className="navMenu"
     >
-      <a
-        onClick={() => handleActive("#")}
-        className={active === "#" ? "active" : ""}
-        href="#"
-      >
+      <a className={activeSec === "header" ? "active" : ""} href="#">
         <BiHomeAlt />
       </a>
-      <a
-        onClick={() => handleActive("#about")}
-        className={active === "#about" ? "active" : ""}
-        href="#about"
-      >
+      <a className={activeSec === "about" ? "active" : ""} href="#about">
         <BsPerson />
       </a>
-      <a
-        onClick={() => handleActive("#skills")}
-        className={active === "#skills" ? "active" : ""}
-        href="#skills"
-      >
+      <a className={activeSec === "skills" ? "active" : ""} href="#skills">
         <FaLaptopCode />
       </a>
       <a
-        onClick={() => handleActive("#portfolio")}
-        className={active === "#portfolio" ? "active" : ""}
+        className={activeSec === "portfolio" ? "active" : ""}
         href="#portfolio"
       >
         <HiOutlineDocumentText />
       </a>
-      <a
-        onClick={() => handleActive("#contact")}
-        className={active === "#contact" ? "active" : ""}
-        href="#contact"
-      >
+      <a className={activeSec === "contact" ? "active" : ""} href="#contact">
         <TbHeartHandshake />
       </a>
 

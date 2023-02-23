@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setActiveSec } from "../../redux/activeSecSlice";
 import "./about.scss";
 
 function About() {
+  const ref = useRef();
+  const dispatch = useDispatch();
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        dispatch(setActiveSec(entry.target.id));
+      }
+    },
+    { threshold: 0.7 }
+  );
+
+  useEffect(() => {
+    observer.observe(ref.current);
+    // Remove the observer as soon as the component is unmounted
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <div id="about" className="about container">
+    <div ref={ref} id="about" className="about container">
       <h2 className="sec-title">About Me</h2>
       <span className="sec-subTitle">My introduction</span>
 
