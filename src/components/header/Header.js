@@ -1,33 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import CV from "../../files/kheiereddin-boukhatem.pdf";
 import { motion } from "framer-motion";
-import { useDispatch } from "react-redux";
-import { setActiveSec } from "../../redux/activeSecSlice";
+import IsInViewPort from "../../utill/IsInViewPort";
 
 function Header() {
   const [scrollToTop, setScrollToTop] = useState(false);
-  const ref = useRef();
-  const dispatch = useDispatch();
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        dispatch(setActiveSec(entry.target.id));
-      }
-    },
-    { threshold: 0.7 }
-  );
-
-  useEffect(() => {
-    observer.observe(ref.current);
-    // Remove the observer as soon as the component is unmounted
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   const handleScroll = () => {
     if (window.scrollY > 500) {
@@ -51,7 +31,7 @@ function Header() {
 
   return (
     <>
-      <div ref={ref} id="header" className="header container">
+      <IsInViewPort threshold={0.7} id="header" className="header container">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -93,7 +73,7 @@ function Header() {
             </div>
           </div>
         </motion.div>
-      </div>
+      </IsInViewPort>
 
       <button
         style={{

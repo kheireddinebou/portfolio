@@ -1,33 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import "./contact.scss";
 import { BiPhone } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import emailjs from "emailjs-com";
-import { useDispatch } from "react-redux";
-import { setActiveSec } from "../../redux/activeSecSlice";
+import IsInViewPort from "../../utill/IsInViewPort";
 
 function Contact() {
   const form = useRef();
-  const ref = useRef();
-  const dispatch = useDispatch();
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        dispatch(setActiveSec(entry.target.id));
-      }
-    },
-    { threshold: 0.5 }
-  );
-
-  useEffect(() => {
-    observer.observe(ref.current);
-    // Remove the observer as soon as the component is unmounted
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   const sendEmail = e => {
     e.preventDefault();
@@ -42,7 +22,7 @@ function Contact() {
   };
 
   return (
-    <div  ref={ref} id="contact" className="contact container">
+    <IsInViewPort threshold={0.5} id="contact" className="contact container">
       <h2 className="sec-title">Contact Me</h2>
       <span className="sec-subTitle">Get in touch</span>
       <div className="row">
@@ -107,7 +87,7 @@ function Contact() {
           <button type="submit">Send Message</button>
         </form>
       </div>
-    </div>
+    </IsInViewPort>
   );
 }
 

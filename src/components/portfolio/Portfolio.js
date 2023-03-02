@@ -1,32 +1,14 @@
-import React, { useRef, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { myProjects } from "../../data/porojects";
-import { setActiveSec } from "../../redux/activeSecSlice";
+import { myProjects } from "../../data/projects";
+import IsInViewPort from "../../utill/IsInViewPort";
 import "./portfolio.scss";
 
 function Portfolio() {
-  const ref = useRef();
-  const dispatch = useDispatch();
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        dispatch(setActiveSec(entry.target.id));
-      }
-    },
-    { threshold: 0.05 }
-  );
-
-  useEffect(() => {
-    observer.observe(ref.current);
-    // Remove the observer as soon as the component is unmounted
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
   return (
-    <div ref={ref} id="portfolio" className="portfolio container">
+    <IsInViewPort
+      threshold={0.05}
+      id="portfolio"
+      className="portfolio container"
+    >
       <h2 className="sec-title">Portfolio</h2>
       <span className="sec-subTitle">Most recent work</span>
       <div className="card-wrapper">
@@ -45,7 +27,7 @@ function Portfolio() {
           </div>
         ))}
       </div>
-    </div>
+    </IsInViewPort>
   );
 }
 

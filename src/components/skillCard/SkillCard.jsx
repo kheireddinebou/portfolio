@@ -64,6 +64,9 @@ function SkillCard({ title, skills, Icon }) {
             <span className="university">
               University of Ahmed Zabana - Relizene
             </span>
+            <span >
+              Oct2022 - Jun2025
+            </span>
           </div>
         </div>
       )}
