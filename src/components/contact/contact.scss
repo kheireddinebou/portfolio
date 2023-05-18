@@ -59,7 +59,7 @@
 
           span {
             font-size: 1rem;
-            color: var(--thered-color);
+            color: var(--third-color);
           }
         }
       }
@@ -81,6 +81,7 @@
         color: var(--primary-color);
         word-wrap: break-word;
         word-break: break-all;
+        transition: all 0.3s ease-in-out;
 
         @media screen and (max-width: 920px) {
           width: 100%;
@@ -89,22 +90,21 @@
         input {
           height: 80px;
         }
+
+        &:hover {
+          border: 1px solid var(--primary-color);
+        }
+
+        &:focus {
+          background-color: var(--bg-color-sec);
+        }
       }
 
       button {
         padding: 15px;
-        color: var(--bg-color);
-        background-color: var(--secondary-color);
         font-size: 1.1rem;
         font-weight: 500;
         border-radius: 7px;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-
-        &:hover {
-          color: var(--secondary-color);
-          background-color: var(--primary-color);
-        }
       }
     }
   }

@@ -18,10 +18,7 @@ export const ThemeProvider = props => {
       "--secondary-color",
       themes[theme].secondaryColor
     );
-    document.body.style.setProperty(
-      "--thered-color",
-      themes[theme].theredColor
-    );
+    document.body.style.setProperty("--third-color", themes[theme].thirdColor);
 
     setTheme(theme);
   };
@@ -39,18 +36,13 @@ const themes = {
     bgColorSec: "#fff",
     primaryColor: "#000",
     secondaryColor: "#01bf71",
-    theredColor: "gray",
+    thirdColor: "gray",
   },
-  // --bg-color: #0d0d0d;
-  // --bg-color-sec: #1b1a1a;
-  // --primary-color: #fff;
-  // --secondary-color: #01bf71;
-  // --thered-color: lightgray;
   dark: {
     bgColor: "#0d0d0d",
     bgColorSec: "#1b1a1a",
     primaryColor: "#fff",
     secondaryColor: "#01bf71",
-    theredColor: "lightgray",
+    thirdColor: "lightgray",
   },
 };

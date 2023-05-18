@@ -4,7 +4,7 @@ import { BiPhone } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import emailjs from "emailjs-com";
-import IsInViewPort from "../../utill/IsInViewPort";
+import IsInViewPort from "../ui/IsInViewPort";
 
 function Contact() {
   const form = useRef();
@@ -49,6 +49,7 @@ function Contact() {
             href="https://www.google.com/maps/dir/%D8%AC%D8%AF%D9%8A%D9%88%D9%8A%D8%A9%E2%80%AD//@35.9296438,0.8651533,13z/data=!4m8!4m7!1m5!1m1!1s0x1283df4a119436f7:0x4305163d294ba6c!2m2!1d0.8302196!2d35.9296489!1m0"
             target="_blank"
             className="call"
+            rel="noreferrer"
           >
             <div className="left">
               <HiOutlineLocationMarker />
@@ -84,7 +85,9 @@ function Contact() {
             placeholder="Your Message"
             required
           />
-          <button type="submit">Send Message</button>
+          <button className="primaryButton" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </IsInViewPort>

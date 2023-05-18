@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setActiveSec } from "../redux/activeSecSlice";
+import { setActiveSec } from "../../redux/activeSecSlice";
 
 const IsInViewPort = ({ children, className, id, threshold }) => {
   const ref = useRef();

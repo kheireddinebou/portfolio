@@ -7,7 +7,7 @@
   --bg-color-sec: #1b1a1a;
   --primary-color: #fff;
   --secondary-color: #01bf71;
-  --thered-color: lightgray;
+  --third-color: lightgray;
 }
 
 * {
@@ -28,6 +28,22 @@ body {
   max-width: 100vw;
 }
 
+button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+// usable styles
+
 .container {
   width: 95%;
   margin: 0 auto;
@@ -40,17 +56,29 @@ body {
   }
 }
 
-button {
-  border: none;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-color);
+.outlineButton {
+  border: 1px solid var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  color: var(--secondary-color);
+  a {
+    color: var(--secondary-color);
+  }
+  &:hover {
+    background-color: var(--bg-color-sec);
+  }
 }
 
-a {
-  text-decoration: none;
+.primaryButton {
+  background-color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+  a {
+    color: var(--bg-color);
+  }
+
+  &:hover {
+    background-color: #03a05f;
+  }
 }
 
 .sec-title {
@@ -63,7 +91,7 @@ a {
 
 .sec-subTitle {
   font-size: 1.2rem;
-  color: var(--thered-color);
+  color: var(--third-color);
   @media screen and (max-width: 850px) {
     font-size: 1rem;
   }

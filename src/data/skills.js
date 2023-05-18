@@ -1,21 +1,19 @@
-export const frontSkills = [
+export const frontEndSkills = [
   "HTML",
-  "CSS",
+  "CSS & Sass",
   "TypeScript",
   "JavaScript",
   "React",
+  "Next.js",
   "React Native",
   "Redux",
-  "Next.js",
+  "Tailwind CSS",
   "Bootstrap",
   "Material-UI",
-  "Sass",
-  "styled-components",
   "Git & GitHub",
-  "Jest",
 ];
 
-export const backSkills = [
+export const backEndSkills = [
   "Node.js",
   "Express.js",
   "MongoDB",

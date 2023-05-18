@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import CV from "../../files/kheiereddin-boukhatem.pdf";
 import { motion } from "framer-motion";
-import IsInViewPort from "../../utill/IsInViewPort";
+import IsInViewPort from "../ui/IsInViewPort";
 
 function Header() {
   const [scrollToTop, setScrollToTop] = useState(false);
@@ -59,15 +59,15 @@ function Header() {
 
           <div className="header-desc">
             <p>Hello, I'm</p>
-            <h1>kheiereddin</h1>
-            <span>front end developer (React Js/ React Native)</span>
+            <h1>Kheiereddin</h1>
+            <span>Front End Developer (React/ Next.js)</span>
             <div className="buttons">
-              <button>
+              <button className="outlineButton">
                 <a href={CV} download>
                   Download CV
                 </a>
               </button>
-              <button>
+              <button className="primaryButton">
                 <a href="#contact">Let's Talk</a>
               </button>
             </div>
@@ -79,7 +79,7 @@ function Header() {
         style={{
           bottom: !scrollToTop ? "-100%" : "5.5rem",
         }}
-        className="scrollTopBtn"
+        className="primaryButton scrollTopBtn"
         onClick={handleScrollToTop}
       >
         <MdKeyboardArrowUp />

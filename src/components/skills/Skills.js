@@ -3,8 +3,8 @@ import { FaUniversity } from "react-icons/fa";
 import { BsServer } from "react-icons/bs";
 import { MdMonitor } from "react-icons/md";
 import SkillCard from "../skillCard/SkillCard";
-import { backSkills, frontSkills } from "../../data/skills";
-import IsInViewPort from "../../utill/IsInViewPort";
+import { backEndSkills, frontEndSkills } from "../../data/skills";
+import IsInViewPort from "../ui/IsInViewPort";
 
 function Skills() {
   return (
@@ -15,12 +15,12 @@ function Skills() {
       <div className="cards-wrapper">
         <SkillCard
           title="Frontend Development"
-          skills={frontSkills}
+          skills={frontEndSkills}
           Icon={<MdMonitor className="icon" />}
         />
         <SkillCard
           title="Backend Development"
-          skills={backSkills}
+          skills={backEndSkills}
           Icon={<BsServer className="icon" />}
         />
         <SkillCard

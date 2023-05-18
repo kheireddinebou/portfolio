@@ -93,7 +93,6 @@
     }
 
     .header-desc {
-      text-transform: capitalize;
       min-width: 700px;
       @media screen and (max-width: 980px) {
         min-width: auto;
@@ -124,7 +123,7 @@
 
       span {
         font-size: 1.7rem;
-        color: var(--thered-color);
+        color: var(--third-color);
         @media screen and (max-width: 473px) {
           font-size: 1.3rem;
         }
@@ -132,47 +131,22 @@
 
       .buttons {
         margin-top: 50px;
-        width: fit-content;
+        width: max-content;
         display: flex;
         gap: 40px;
 
         @media screen and (max-width: 1150px) {
           margin-top: 30px;
         }
+
+        @media screen and (max-width: 473px) {
+          gap: 20px;
+        }
+
         button {
           padding: 15px;
           border-radius: 10px;
           font-size: 1.2rem;
-          border: 1px solid var(--secondary-color);
-          transition: all 0.2s ease-in-out;
-          cursor: pointer;
-
-          @media screen and (max-width: 608px) {
-            padding: 8px;
-            font-size: 1rem;
-          }
-
-          &:nth-child(1) {
-            background-color: transparent;
-            a {
-              color: var(--secondary-color);
-            }
-          }
-
-          &:nth-child(2) {
-            background-color: var(--secondary-color);
-            a {
-              color: var(--bg-color);
-              &:hover {
-                color: var(--secondary-color);
-              }
-            }
-          }
-
-          &:hover {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-          }
         }
       }
     }
@@ -192,26 +166,17 @@
 
 .scrollTopBtn {
   font-size: 4.4rem;
-  color: var(--bg-color);
   height: 70px;
   width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--secondary-color);
   position: fixed;
   right: 5.2rem;
   bottom: 5.2rem;
-  color: var(--bg-color);
-  cursor: pointer;
-  transition: all 0.8s ease;
+  transition: all 0.8s ease !important;
   box-shadow: 0 0 8px rgb(50, 50, 50);
-
-  &:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
 
   @media screen and (max-width: 808px) {
     display: none;

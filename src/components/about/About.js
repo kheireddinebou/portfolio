@@ -1,4 +1,4 @@
-import IsInViewPort from "../../utill/IsInViewPort";
+import IsInViewPort from "../ui/IsInViewPort";
 import "./about.scss";
 
 function About() {
@@ -9,9 +9,9 @@ function About() {
 
       <div className="desc">
         <p>
-          As a skilled Front End Developer, I am proficient in the MERN
-          Stack and specialize in creating visually appealing and user-friendly
-          websites using React.js. I am also experienced in developing
+          As a skilled Front End Developer, I am proficient in the MERN Stack
+          and specialize in creating visually appealing and user-friendly
+          websites using React. I am also experienced in developing
           cross-platform mobile applications using React Native, ensuring that
           users have a seamless experience across all devices.
           <br /> I have a strong commitment to meeting deadlines and valuing the
@@ -20,7 +20,9 @@ function About() {
           <br /> I am constantly seeking out new challenges and opportunities to
           expand my knowledge and deliver high-quality results.
         </p>
-        <a href="#contact">Let's talk</a>
+        <button className="primaryButton">
+          <a href="#contact">Let's talk</a>
+        </button>
       </div>
     </IsInViewPort>
   );

@@ -27,7 +27,7 @@ function SkillCard({ title, skills, Icon }) {
   }, [isIntersecting]);
 
   return (
-    <div ref={ref} className="card">
+    <div ref={ref} className="skillCard">
       <div className="top">
         <div className="row">
           {Icon}

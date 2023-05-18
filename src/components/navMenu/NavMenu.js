@@ -26,26 +26,30 @@ function NavMenu() {
       className="navMenu"
     >
       <a className={activeSec === "header" ? "active" : ""} href="#">
-        <BiHomeAlt />
+        <BiHomeAlt className="navIcon" />
       </a>
       <a className={activeSec === "about" ? "active" : ""} href="#about">
-        <BsPerson />
+        <BsPerson className="navIcon" />
       </a>
       <a className={activeSec === "skills" ? "active" : ""} href="#skills">
-        <FaLaptopCode />
+        <FaLaptopCode className="navIcon" />
       </a>
       <a
         className={activeSec === "portfolio" ? "active" : ""}
         href="#portfolio"
       >
-        <HiOutlineDocumentText />
+        <HiOutlineDocumentText className="navIcon" />
       </a>
       <a className={activeSec === "contact" ? "active" : ""} href="#contact">
-        <TbHeartHandshake />
+        <TbHeartHandshake className="navIcon" />
       </a>
 
       <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-        {theme === "light" ? <MdOutlineDarkMode /> : <BsSun />}
+        {theme === "light" ? (
+          <MdOutlineDarkMode className="navIcon" />
+        ) : (
+          <BsSun className="navIcon" />
+        )}
       </button>
     </motion.div>
   );
