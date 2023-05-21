@@ -1,0 +1,104 @@
+.skillCard {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  max-width: 95vw;
+}
+.skillCard .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.skillCard .top .underline {
+  content: " ";
+  position: absolute;
+  border-bottom: 2px var(--secondary-color) solid;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  transition: all 1s ease-in-out;
+}
+.skillCard .top .row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skillCard .top .row .icon {
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+}
+.skillCard .top .row p {
+  font-size: 1.5rem;
+}
+.skillCard .top button {
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  transition: 1s all ease-in-out;
+  cursor: pointer;
+}
+.skillCard .top button.rotate {
+  transform: rotate(-180deg);
+}
+.skillCard .skills-bottom {
+  padding: 2.5rem 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  transition: 1s all ease-in-out;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 500px) {
+  .skillCard .skills-bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.skillCard .skills-bottom .row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+}
+.skillCard .skills-bottom .row .icon {
+  color: var(--secondary-color);
+}
+.skillCard .skills-bottom .row span {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-align: start;
+  width: 140px;
+}
+.skillCard .educ-bottom {
+  padding: 1.9rem 10px;
+  width: 100%;
+  display: flex;
+  gap: 35px;
+  transition: 1s all ease-in-out;
+}
+.skillCard .educ-bottom .icon {
+  font-size: 2.6rem;
+  color: var(--secondary-color);
+  margin-top: 5px;
+}
+.skillCard .educ-bottom .desc {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: flex-start;
+}
+.skillCard .educ-bottom .desc .license {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.skillCard .educ-bottom .desc .university {
+  font-size: 1rem;
+  color: var(--thered-color);
+}
+.skillCard .educ-bottom .desc span {
+  color: var(--thered-color);
+  font-size: 0.9rem;
+}/*# sourceMappingURL=skillCard.css.map */

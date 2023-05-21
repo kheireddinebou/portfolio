@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import CV from "../../files/kheiereddin-boukhatem.pdf";
 import { motion } from "framer-motion";
 import IsInViewPort from "../ui/IsInViewPort";
 
@@ -63,8 +62,12 @@ function Header() {
             <span>Front End Developer (React/ Next.js)</span>
             <div className="buttons">
               <button className="outlineButton">
-                <a href={CV} download>
-                  Download CV
+                <a
+                  href="https://kheiereddin.onrender.com/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Resume
                 </a>
               </button>
               <button className="primaryButton">

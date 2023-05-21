@@ -14,10 +14,10 @@ function About() {
           websites using React. I am also experienced in developing
           cross-platform mobile applications using React Native, ensuring that
           users have a seamless experience across all devices.
-          <br /> I have a strong commitment to meeting deadlines and valuing the
+          <br className="mb-3"/> I have a strong commitment to meeting deadlines and valuing the
           importance of time. I believe that open communication and
           collaboration are key to achieving the best possible results.
-          <br /> I am constantly seeking out new challenges and opportunities to
+          <br className="mb-3"/> I am constantly seeking out new challenges and opportunities to
           expand my knowledge and deliver high-quality results.
         </p>
         <button className="primaryButton">

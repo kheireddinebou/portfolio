@@ -1,0 +1,15 @@
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 0;
+}
+.portfolio .card-wrapper {
+  padding: 80px 0;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,63 @@
+.navMenu {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 3rem;
+  z-index: 2;
+  gap: 0.8rem;
+  width: 370px;
+  max-width: 95vw;
+}
+@media screen and (max-width: 808px) {
+  .navMenu {
+    gap: 0;
+  }
+}
+.navMenu a,
+.navMenu button {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navMenu a:hover,
+.navMenu button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navMenu a:hover .navIcon,
+.navMenu button:hover .navIcon {
+  transform: scale(1.3);
+  transition: all 0.2s ease-out;
+}
+@media screen and (max-width: 808px) {
+  .navMenu a,
+  .navMenu button {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+.navMenu a .navIcon:hover,
+.navMenu button .navIcon:hover {
+  transform: scale(1.3);
+  transition: all 0.2s ease-out;
+}
+.navMenu button {
+  background-color: transparent;
+}
+.navMenu a.active {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+}/*# sourceMappingURL=NavMenu.css.map */

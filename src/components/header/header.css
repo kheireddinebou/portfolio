@@ -1,0 +1,186 @@
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 550px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
+.header .header_wrapper {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+.header .header_wrapper .links {
+  display: flex;
+  margin-right: 30px;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1150px) {
+  .header .header_wrapper .links {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 808px) {
+  .header .header_wrapper .links {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 608px) {
+  .header .header_wrapper .links {
+    margin-right: 20px;
+  }
+}
+.header .header_wrapper .links a {
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+  border-left: 2.5px solid transparent;
+  position: relative;
+}
+@media screen and (max-width: 808px) {
+  .header .header_wrapper .links a {
+    font-size: 1.8rem;
+  }
+}
+.header .header_wrapper .links a::after {
+  content: " ";
+  position: absolute;
+  border-left: 2px var(--secondary-color) solid;
+  top: 5px;
+  left: -7px;
+  height: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.header .header_wrapper .links a:hover::after {
+  height: 75%;
+  transition: all 0.3s ease-in-out;
+}
+.header .header_wrapper .links .scrollDown-link {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  height: 60px;
+  width: 25px;
+  border-radius: 10px;
+  position: relative;
+}
+.header .header_wrapper .links .scrollDown-link:hover::after {
+  top: 0;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.header .header_wrapper .links .scrollDown-link .circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  animation: scrollDown 1s ease infinite;
+  position: absolute;
+  background-color: var(--secondary-color);
+  bottom: 0;
+}
+.header .header_wrapper .header-desc {
+  min-width: 700px;
+}
+@media screen and (max-width: 980px) {
+  .header .header_wrapper .header-desc {
+    min-width: auto;
+  }
+}
+.header .header_wrapper .header-desc p {
+  font-size: 2.1rem;
+}
+@media screen and (max-width: 608px) {
+  .header .header_wrapper .header-desc p {
+    font-size: 1.7rem;
+  }
+}
+.header .header_wrapper .header-desc h1 {
+  font-size: 5.3rem;
+  letter-spacing: 3.3px;
+}
+@media screen and (max-width: 1150px) {
+  .header .header_wrapper .header-desc h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 808px) {
+  .header .header_wrapper .header-desc h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 473px) {
+  .header .header_wrapper .header-desc h1 {
+    font-size: 2.6rem;
+    letter-spacing: normal;
+  }
+}
+.header .header_wrapper .header-desc span {
+  font-size: 1.7rem;
+  color: var(--third-color);
+}
+@media screen and (max-width: 473px) {
+  .header .header_wrapper .header-desc span {
+    font-size: 1.3rem;
+  }
+}
+.header .header_wrapper .header-desc .buttons {
+  margin-top: 50px;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 1150px) {
+  .header .header_wrapper .header-desc .buttons {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 473px) {
+  .header .header_wrapper .header-desc .buttons {
+    gap: 20px;
+  }
+}
+.header .header_wrapper .header-desc .buttons button {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+@keyframes scrollDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+.scrollTopBtn {
+  font-size: 4.4rem;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 5.2rem;
+  bottom: 5.2rem;
+  transition: all 0.8s ease !important;
+  box-shadow: 0 0 8px rgb(50, 50, 50);
+}
+@media screen and (max-width: 808px) {
+  .scrollTopBtn {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

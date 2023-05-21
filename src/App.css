@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --bg-color: #0d0d0d;
+  --bg-color-sec: #1b1a1a;
+  --primary-color: #fff;
+  --secondary-color: #01bf71;
+  --third-color: lightgray;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+button {
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 690px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 85%;
+  }
+}
+
+.outlineButton {
+  border: 1px solid var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.outlineButton a {
+  color: var(--secondary-color);
+}
+.outlineButton:hover {
+  background-color: var(--bg-color-sec);
+}
+
+.primaryButton {
+  background-color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
+}
+.primaryButton a {
+  color: var(--bg-color);
+}
+.primaryButton:hover {
+  background-color: #03a05f;
+}
+
+.sec-title {
+  color: var(--secondary-color);
+  font-size: 2.9rem;
+}
+@media screen and (max-width: 850px) {
+  .sec-title {
+    font-size: 2.4rem;
+  }
+}
+
+.sec-subTitle {
+  font-size: 1.2rem;
+  color: var(--third-color);
+}
+@media screen and (max-width: 850px) {
+  .sec-subTitle {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=App.css.map */
