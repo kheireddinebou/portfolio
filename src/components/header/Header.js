@@ -63,7 +63,7 @@ function Header() {
             <div className="buttons">
               <button className="outlineButton">
                 <a
-                  href="https://kheiereddin.onrender.com/resume.pdf"
+                  href="https://kheiereddin.vercel.app//resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                 >
