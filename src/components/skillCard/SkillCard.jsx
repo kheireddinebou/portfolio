@@ -60,7 +60,7 @@ function SkillCard({ title, skills, Icon }) {
           <FaUniversity className="icon" />
 
           <div className="desc">
-            <p className="license">Bachelor of Science and Technology</p>
+            <p className="license">Bachelor of Automation Engineer</p>
             <span className="university">
               University of Ahmed Zabana - Relizene
             </span>
