@@ -27,22 +27,22 @@ function Contact() {
       <span className="sec-subTitle">Get in touch</span>
       <div className="row">
         <div className="links-wrapper">
-          <a href="tel:+213675196759" className="call">
+          <a href="tel:+213779339748" className="call">
             <div className="left">
               <BiPhone />
             </div>
             <div className="right">
               <p>Call me</p>
-              <span>+213-675-196-759</span>
+              <span>+213-779-339-748</span>
             </div>
           </a>
-          <a href="mailto:kheiereddin2004@gmail.com" className="call">
+          <a href="mailto:kheireddineboukhatem1@gmail.com" className="call">
             <div className="left">
               <MdOutlineEmail />
             </div>
             <div className="right">
               <p>Email</p>
-              <span>kheiereddin2004@gmail.com</span>
+              <span>kheireddineboukhatem1@gmail.com</span>
             </div>
           </a>
           <a

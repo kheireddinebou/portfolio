@@ -19,25 +19,25 @@ function Footer() {
       <div className="links">
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/kheiereddin-boukhatem-801425240"
+          href="https://www.linkedin.com/in/kheireddine-boukhatem-801425240/"
         >
           <FaLinkedin />
         </a>
-        <a target="_blank" href="https://github.com/khiereddinbou">
+        <a target="_blank" href="https://github.com/kheireddinebou">
           <FaGithub />
         </a>
-        <a target="_blank" href="https://www.facebook.com/kheier.eddin">
+        <a target="_blank" href="https://www.facebook.com/kheireddine.boukhatem.fb">
           <FaFacebook />
         </a>
         <a
           target="_blank"
-          href="https://www.instagram.com/kheiereddinboukhatem/"
+          href="https://www.instagram.com/kheireddineboukhatem1/"
         >
           <FaInstagram />
         </a>
       </div>
 
-      <p>© KHEIEREDDIN All rights reserved</p>
+      <p>© KHEIREDDINE All rights reserved</p>
     </div>
   );
 }

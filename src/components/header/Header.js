@@ -40,14 +40,14 @@ function Header() {
           <div className="links">
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/kheiereddin-boukhatem-801425240"
+              href="https://www.linkedin.com/in/kheireddine-boukhatem-801425240/"
             >
               <FaLinkedin />
             </a>
-            <a target="_blank" href="https://github.com/khiereddinbou">
+            <a target="_blank" href="https://github.com/kheireddinebou">
               <FaGithub />
             </a>
-            <a target="_blank" href="https://www.facebook.com/kheier.eddin">
+            <a target="_blank" href="https://www.facebook.com/kheireddine.boukhatem.fb">
               <FaFacebook />
             </a>
 
@@ -58,12 +58,12 @@ function Header() {
 
           <div className="header-desc">
             <p>Hello, I'm</p>
-            <h1>Kheiereddin</h1>
+            <h1>Kheireddine</h1>
             <span>Front End Developer (React/ Next.js)</span>
             <div className="buttons">
               <button className="outlineButton">
                 <a
-                  href="https://kheiereddin.vercel.app//resume.pdf"
+                  href="https://kheireddine.vercel.app//resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                 >
